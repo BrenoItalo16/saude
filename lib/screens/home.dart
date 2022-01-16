@@ -46,22 +46,7 @@ class _HomeState extends State<Home> {
           SliverToBoxAdapter(
             child: AreaCriarPostagem(usuario: usuarioAtual),
           ),
-          // const SliverPadding(
-          //   padding: EdgeInsets.fromLTRB(0, 0, 0, 5),
-          //   sliver: SliverToBoxAdapter(
-          //       // child: PassageArea(),//todo: PassageArea
-          //       ),
-          // ),
-          //*Sliver
-          // SliverPadding(
-          //   padding: const EdgeInsets.fromLTRB(0, 0, 0, 5),
-          //   sliver: SliverToBoxAdapter(
-          //     child: AreaEstoria(
-          //       usuario: usuarioAtual,
-          //       estorias: estorias,
-          //     ),
-          //   ),
-          // ),
+          //! Lista de passagens
           SliverList(
             delegate: SliverChildBuilderDelegate(
               (context, index) {
