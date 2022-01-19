@@ -78,19 +78,58 @@ class _HomeState extends State<Home> {
             showTrackOnHover: true,
             isAlwaysShown: true,
             child: SingleChildScrollView(
-                controller: _slidingBar,
-                scrollDirection: Axis.horizontal,
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
-                  child: Row(
-                    children: const [
-                      SelectableText(
-                        'Nº Vaga',
-                        style: TextStyle(fontWeight: FontWeight.bold),
-                      )
-                    ],
-                  ),
-                )),
+              controller: _slidingBar,
+              scrollDirection: Axis.horizontal,
+              child: Padding(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                child: Column(
+                  children: [
+                    Row(
+                      // ignore: prefer_const_literals_to_create_immutables
+                      children: [
+                        const SizedBox(
+                          width: 100,
+                          child: SelectableText(
+                            'Nº Vaga',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 300,
+                          child: SelectableText(
+                            'Nome',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 300,
+                          child: SelectableText(
+                            'Procedimento',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 300,
+                          child: SelectableText(
+                            'Destino',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 100,
+                          child: SelectableText(
+                            'Ida/Volta',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 8),
+                  ],
+                ),
+              ),
+            ),
           ),
         ],
       ),
