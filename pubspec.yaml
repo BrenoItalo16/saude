@@ -37,7 +37,7 @@ dependencies:
   line_icons: ^2.0.1
   device_preview: ^1.0.0 #https://pub.dev/packages/line_icons/install
   cached_network_image: ^3.2.0 #https://pub.dev/packages/cached_network_image/install
-  footer: ^0.0.3
+  intl: ^0.17.0
 
 dev_dependencies:
   flutter_test:

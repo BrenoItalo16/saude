@@ -8,7 +8,8 @@ void main() {
     MaterialApp(
       title: "Sistem saúde",
       debugShowCheckedModeBanner: false,
-      home: const Home(),
+      // ignore: prefer_const_constructors
+      home: Home(),
     ),
   );
 }

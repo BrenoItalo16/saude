@@ -13,10 +13,10 @@ class AreaCriarPostagem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.fromLTRB(12, 8, 12, 8),
-      color: Colors.white,
+      color: Colors.grey[300],
       child: Column(
         children: [
-          const Divider(height: 10, thickness: 0.5),
+          // const Divider(height: 10, thickness: 0.5),
           // ignore: sized_box_for_whitespace
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -62,17 +62,6 @@ class AreaCriarPostagem extends StatelessWidget {
                 ],
               ),
               const Divider(height: 10, thickness: 0.5),
-              const Padding(
-                padding: EdgeInsets.only(left: 32, top: 32),
-                child: Text(
-                  "PASSAGENS AGENDADAS",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 16,
-                    color: Colors.blueGrey,
-                  ),
-                ),
-              ),
             ],
           ),
         ],
