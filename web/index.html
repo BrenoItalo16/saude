@@ -100,5 +100,29 @@
       loadMainDartJs();
     }
   </script>
+  
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+
+       <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyCBGyrmwHWAJydDuyTCoEELeY9TDXHnfx0",
+          authDomain: "saude-cadastro-passagens.firebaseapp.com",
+          projectId: "saude-cadastro-passagens",
+          storageBucket: "saude-cadastro-passagens.appspot.com",
+          messagingSenderId: "920360738993",
+          appId: "1:920360738993:web:5d5a3d0c04dd936abf0290"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+
 </body>
 </html>

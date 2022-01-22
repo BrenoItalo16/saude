@@ -18,13 +18,13 @@ class PostList extends StatelessWidget {
       rows: [
         DataRow(
           cells: [
-            DataCell(Text(paciente.idade.toString())),
+            DataCell(Text(paciente.nasc)),
             DataCell(Text(paciente.nome)),
           ],
         ),
         DataRow(
           cells: [
-            DataCell(Text(paciente.idade.toString())),
+            DataCell(Text(paciente.nasc)),
             DataCell(Text(paciente.nome)),
           ],
         ),

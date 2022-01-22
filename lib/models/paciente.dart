@@ -1,22 +1,26 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+
 class Paciente {
   String nome;
   String cpf;
-  int idade;
+  String nasc;
   String cns;
-  String sexo;
+  bool sexo;
   String endereco;
   String bairro;
   String contato;
+  Timestamp timestamp;
 
   Paciente({
     //*Constructor
     required this.nome,
     required this.cpf,
-    required this.idade,
+    required this.nasc,
     required this.cns,
     required this.sexo,
     required this.endereco,
     required this.bairro,
     required this.contato,
+    required this.timestamp,
   });
 }

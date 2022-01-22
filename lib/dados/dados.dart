@@ -402,12 +402,12 @@ List<Passagem> passagens = [
   ),
 ];
 
-/* Lista de Pacientes */
+/* Lista de Pacientes 
 List<Paciente> pacientes = [
   Paciente(
     nome: "Jonh Zoe Azevedo da Silva Fonseca",
     cpf: "056.452.865-23",
-    idade: 30,
+    nasc: '16/04/1990',
     cns: "123565849845621",
     sexo: "M",
     endereco: "Rua Luiz Romão Barreto",
@@ -417,7 +417,7 @@ List<Paciente> pacientes = [
   Paciente(
     nome: "Breno Italo",
     cpf: "056.452.865-23",
-    idade: 31,
+    nasc: '16/04/1990',
     cns: "123565849845621",
     sexo: "M",
     endereco: "Rua Luiz Romão Barreto",
@@ -427,7 +427,7 @@ List<Paciente> pacientes = [
   Paciente(
     nome: "Raylan Brayan",
     cpf: "056.452.865-23",
-    idade: 30,
+    nasc: '16/04/1990',
     cns: "1453678848654221",
     sexo: "F",
     endereco: "Rua Maria Morais de Souza",
@@ -437,7 +437,7 @@ List<Paciente> pacientes = [
   Paciente(
     nome: "Martins Neto",
     cpf: "056.452.865-23",
-    idade: 30,
+    nasc: '16/04/1990',
     cns: "1453678848654221",
     sexo: "F",
     endereco: "Rua Maria Morais de Souza",
@@ -447,7 +447,7 @@ List<Paciente> pacientes = [
   Paciente(
     nome: "Gildean Alcântara",
     cpf: "056.452.865-23",
-    idade: 30,
+    nasc: '16/04/1990',
     cns: "1453678848654221",
     sexo: "F",
     endereco: "Rua Maria Morais de Souza",
@@ -457,11 +457,11 @@ List<Paciente> pacientes = [
   Paciente(
     nome: "Dairla",
     cpf: "056.452.865-23",
-    idade: 30,
+    nasc: '16/04/1990',
     cns: "1453678848654221",
     sexo: "F",
     endereco: "Rua Maria Morais de Souza",
     bairro: "Segundo Mestre",
     contato: "84 991569683",
-  ),
-];
+  ), 
+]; */
