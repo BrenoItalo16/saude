@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:saude/components/area_criar_postagem.dart';
 import 'package:saude/components/circle_buttom.dart';
 import 'package:saude/components/passage_list.dart';
+import 'package:saude/models/cidade_manager.dart';
 import 'package:saude/models/h2.dart';
 import 'package:saude/models/modelos.dart';
-import 'package:saude/models/paciente_manager.dart';
 import 'package:saude/ultilities/color_palette.dart';
 
 class Home extends StatefulWidget {
@@ -70,7 +70,7 @@ class _HomeState extends State<Home> {
                 buttomLength: 115,
                 buttomText: "Relatório",
                 onPressed: () {
-                  PacienteManager();
+                  CidadeManager();
                 },
               ),
             ],
