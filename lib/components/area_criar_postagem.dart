@@ -1,19 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
-import 'package:saude/models/usuario.dart';
 
 class AreaCriarPostagem extends StatelessWidget {
-  final Usuario usuario;
+  // final Usuario usuario;
   const AreaCriarPostagem({
     Key? key,
-    required this.usuario,
+    // required this.usuario,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.fromLTRB(12, 8, 12, 8),
-      color: Colors.grey[300],
+      // color: Colors.grey[300],
       child: Column(
         children: [
           // const Divider(height: 10, thickness: 0.5),
@@ -61,7 +60,7 @@ class AreaCriarPostagem extends StatelessWidget {
                   ),
                 ],
               ),
-              const Divider(height: 10, thickness: 0.5),
+              // const Divider(height: 10, thickness: 0.5),
             ],
           ),
         ],

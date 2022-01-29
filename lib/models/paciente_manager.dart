@@ -3,15 +3,17 @@ import 'package:saude/models/modelos.dart';
 
 class PacienteManager {
   PacienteManager() {
+    //recuperar contatos
     _loadAllPacientes();
   }
 
   final FirebaseFirestore firestore = FirebaseFirestore.instance;
 
+  List<Paciente> listaDePacientesDoFirebase = [];
+
   Future<List<Paciente>> _loadAllPacientes() async {
     final pacientRef = firestore.collection('pacientes');
     QuerySnapshot querySnapshot = await pacientRef.get();
-    List<Paciente> listaDePacientesDoFirebase = [];
 
     for (DocumentSnapshot item in querySnapshot.docs) {
       //* _recuperarContatos
@@ -39,15 +41,9 @@ class PacienteManager {
       listaDePacientesDoFirebase.add(paciente);
     }
     // ignore: avoid_print
-    print(
-      listaDePacientesDoFirebase[0].timestamp.toDate(),
-    );
+    // print(
+    //   listaDePacientesDoFirebase.length,
+    // );
     return listaDePacientesDoFirebase;
   }
-
-  // @override
-  // void initState() {
-  //   //todo: implement initstate
-  //   super.initState();
-  // }
 }

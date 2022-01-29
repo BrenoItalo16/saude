@@ -3,12 +3,14 @@ class Passagem {
   String nome;
   String procedimento;
   String destino;
-  bool idaVolta;
+  bool ida;
+  bool volta;
   Passagem({
     required this.numeroVaga,
     required this.nome,
     required this.procedimento,
     required this.destino,
-    this.idaVolta = true,
+    this.ida = true,
+    this.volta = true,
   });
 }

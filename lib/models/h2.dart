@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:saude/components/area_criar_postagem.dart';
-import 'package:saude/dados/dados.dart';
 import 'package:saude/ultilities/color_palette.dart';
 
 class H2 extends StatelessWidget {
@@ -10,7 +8,7 @@ class H2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        AreaCriarPostagem(usuario: usuarioAtual),
+        // AreaCriarPostagem(usuario: usuarioAtual),
         Padding(
           padding: const EdgeInsets.fromLTRB(16, 16, 32, 16),
           child: Row(

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:saude/components/area_criar_postagem.dart';
 import 'package:saude/components/circle_buttom.dart';
-import 'package:saude/dados/dados.dart';
 import 'package:saude/ultilities/color_palette.dart';
 
 class Home extends StatefulWidget {
@@ -45,7 +43,7 @@ class _HomeState extends State<Home> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          AreaCriarPostagem(usuario: usuarioAtual),
+          // AreaCriarPostagem(usuario: usuarioAtual),
           Padding(
             padding: const EdgeInsets.fromLTRB(32, 16, 32, 0),
             child: Row(
