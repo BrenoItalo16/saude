@@ -21,6 +21,7 @@ class CidadeManager {
       Cidade cidade = Cidade(ibge: ibge, nome: nome);
       listaDeCidadesDoFirebase.add(cidade);
     }
+    // print(querySnapshot.docs[0].id); //!Captura o id
     return listaDeCidadesDoFirebase;
   }
 }

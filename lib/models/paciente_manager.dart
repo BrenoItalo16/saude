@@ -40,10 +40,7 @@ class PacienteManager {
       //* Lista de pacientes do firebase a baixo
       listaDePacientesDoFirebase.add(paciente);
     }
-    // ignore: avoid_print
-    // print(
-    //   listaDePacientesDoFirebase.length,
-    // );
+    // print(querySnapshot.docs[0].id); //!Captura o id
     return listaDePacientesDoFirebase;
   }
 }

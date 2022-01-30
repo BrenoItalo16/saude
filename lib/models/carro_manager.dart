@@ -28,6 +28,7 @@ class CarroManager {
       );
       listaDeCarrosDoFirebase.add(carro);
     }
+    // print(querySnapshot.docs[0].id); //!Captura o id
     return listaDeCarrosDoFirebase;
   }
 }

@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:saude/components/area_criar_postagem.dart';
 import 'package:saude/components/circle_buttom.dart';
 import 'package:saude/components/passage_list.dart';
-import 'package:saude/models/cidade_manager.dart';
-import 'package:saude/models/h2.dart';
+import 'package:saude/components/h2.dart';
 import 'package:saude/models/modelos.dart';
+import 'package:saude/models/procedimentos_manager.dart';
 import 'package:saude/ultilities/color_palette.dart';
 
 class Home extends StatefulWidget {
@@ -54,6 +54,7 @@ class _HomeState extends State<Home> {
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
+            floating: true,
             backgroundColor: Colors.grey[200],
             shadowColor: Colors.black,
             title: const Text(
@@ -70,10 +71,17 @@ class _HomeState extends State<Home> {
                 buttomLength: 115,
                 buttomText: "Relatório",
                 onPressed: () {
-                  CidadeManager();
+                  ProcedimentosManager(); //!Edite aqui para testa o model
                 },
               ),
             ],
+          ),
+          SliverToBoxAdapter(
+            child: Container(
+              height: 2,
+              width: MediaQuery.of(context).size.width,
+              color: Colors.grey[400],
+            ),
           ),
           const SliverToBoxAdapter(
             child: AreaCriarPostagem(),
@@ -86,7 +94,7 @@ class _HomeState extends State<Home> {
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 decoration: BoxDecoration(
                   borderRadius: const BorderRadius.all(Radius.circular(10)),
-                  color: Colors.grey[300],
+                  color: Colors.grey[200],
                 ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
